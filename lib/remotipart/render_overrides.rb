@@ -2,7 +2,6 @@ module Remotipart
   # Responder used to automagically wrap any non-xml replies in a text-area
   # as expected by iframe-transport.
   module RenderOverrides
-    include ActionView::Helpers::TagHelper
     include ERB::Util
 
     def self.included(base)
