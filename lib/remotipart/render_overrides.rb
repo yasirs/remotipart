@@ -3,6 +3,7 @@ module Remotipart
   # as expected by iframe-transport.
   module RenderOverrides
     include ActionView::Helpers::TagHelper
+    include ERB::Util
 
     def self.included(base)
       base.class_eval do
